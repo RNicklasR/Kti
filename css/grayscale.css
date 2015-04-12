@@ -57,6 +57,11 @@ a:focus {
     color: #1d9b6c;
 }
 
+.peq {
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: normal;
+}
 .light {
     font-weight: 400;
 }
@@ -140,6 +145,14 @@ a:focus {
     }
 }
 
+.row{
+padding-top: 70px; 
+}
+
+.bloque{
+padding-top: 100px; 
+height:300px;
+}
 .intro {
     display: table;
     width: 100%;
@@ -162,6 +175,27 @@ background-image:  linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(
     -o-background-size: cover;
 }
 
+.intro-gallery {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    /*background: url(../img/li_river.jpg) no-repeat bottom center scroll;
+	esto estaba asa antes, pero le meti un gradiente a negro para que no qudase cortado*/
+background-image: -webkit-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
+background-image:  -moz-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
+background-image:  -o-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
+background-image:  -ms-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
+background-image:  linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
+
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 
 /**PARALLAX**/
 .parallax-window {
@@ -174,21 +208,22 @@ background-image:  linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(
     vertical-align: middle;
 }
 
-.intro .intro-body .brand-heading {
+.intro  .intro-body .brand-heading,.intro-gallery  .intro-body .brand-heading{
     font-size: 40px;
 }
+
 
 .intro .intro-body .intro-text {
     font-size: 18px;
 }
 
 @media(min-width:768px) {
-    .intro {
+    .intro{
         height: 100%;
         padding: 0;
     }
 
-    .intro .intro-body .brand-heading {
+    .intro .intro-body .brand-heading, .intro-gallery .intro-body .brand-heading {
         font-size: 100px;
     }
 
@@ -318,6 +353,7 @@ background-image:  linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    background-color: transparent !important;
 }
 
 .btn-default {
