@@ -152,6 +152,7 @@ padding-top: 70px;
 .bloque{
 padding-top: 100px; 
 height:300px;
+float:center;
 }
 .intro {
     display: table;
@@ -174,6 +175,23 @@ background-image:  linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(
     background-size: cover;
     -o-background-size: cover;
 }
+.catalog{
+    padding: 100px 0;
+    width: 100%;
+    height: auto;
+   text-align: center;
+    padding: 100px 0;
+background-image: -webkit-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
+background-image:  -moz-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
+background-image:  -o-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
+background-image:  -ms-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
+background-image:  linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 
 .intro-gallery {
     display: table;
@@ -189,7 +207,7 @@ background-image:  -moz-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%),
 background-image:  -o-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
 background-image:  -ms-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
 background-image:  linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(../img/li_river.jpg);
-
+    /*ajusta width a la pag*/
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -344,6 +362,32 @@ background-image:  linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(
         margin-top: 250px;
     }
 }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      padding-top: 80px;
+      width: 100%;
+      margin: auto;
+      height: 600px;
+	background-image: -webkit-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%);
+	background-image:  -moz-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%);
+	background-image:  -o-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%);
+	background-image:  -ms-linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%);
+	background-image:  linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%);
+  }
+
+.categ{
+
+
+    -webkit-transition: opacity 2s ease-in;
+       -moz-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+         -o-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
+}
+
+ .load {
+    opacity: 1;
+}
 
 .btn {
     border-radius: 0;
@@ -353,6 +397,7 @@ background-image:  linear-gradient(rgba(0,0,0, 0) 85%,rgba(0,0,0, 1) 100%), url(
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    background-color: transparent !important;
 }
 
 .btn-default {
